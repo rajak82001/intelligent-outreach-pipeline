@@ -1,0 +1,68 @@
+[
+  {
+    "company": {
+      "domain": "kriralabs.com",
+      "name": "Krira Labs",
+      "relevance": "B"
+    },
+    "decisionMakers": [
+      {
+        "personId": "aaaa1",
+        "fullName": "Atul Gupta",
+        "firstName": "Atul",
+        "lastName": "Gupta",
+        "jobTitle": "VP of Engineering",
+        "linkedinUrl": "https://www.linkedin.com/in/guptaatul",
+        "companyName": "Microsoft",
+        "companyDomain": "microsoft.com",
+        "email": "rajak23242526@gmail.com",
+        "verification": "verified"
+      },
+      {
+        "personId": "aaaa5",
+        "fullName": "Avi Yoshi",
+        "firstName": "Avi",
+        "lastName": "Yoshi",
+        "jobTitle": "CTO & Solution Sales at Microsoft Israel",
+        "linkedinUrl": "https://www.linkedin.com/in/avi-yoshi",
+        "companyName": "Microsoft",
+        "companyDomain": "microsoft.com",
+        "email": "avi.yoshi@microsoft.com",
+        "verification": "verified"
+      }
+    ]
+  },
+  {
+    "company": {
+      "domain": "microsoft.com",
+      "name": "Microsoft",
+      "relevance": "B"
+    },
+    "decisionMakers": [
+      {
+        "personId": "aaaa1",
+        "fullName": "Atul Gupta",
+        "firstName": "Atul",
+        "lastName": "Gupta",
+        "jobTitle": "VP of Engineering",
+        "linkedinUrl": "https://www.linkedin.com/in/guptaatul",
+        "companyName": "Microsoft",
+        "companyDomain": "microsoft.com",
+        "email": "rajak23242526@gmail.com",
+        "verification": "verified"
+      },
+      {
+        "personId": "aaaa5",
+        "fullName": "Avi Yoshi",
+        "firstName": "Avi",
+        "lastName": "Yoshi",
+        "jobTitle": "CTO & Solution Sales at Microsoft Israel",
+        "linkedinUrl": "https://www.linkedin.com/in/avi-yoshi",
+        "companyName": "Microsoft",
+        "companyDomain": "microsoft.com",
+        "email": "avi.yoshi@microsoft.com",
+        "verification": "verified"
+      }
+    ]
+  }
+]
