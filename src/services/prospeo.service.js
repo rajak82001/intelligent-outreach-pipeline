@@ -56,53 +56,53 @@ export async function getDecisionMakers(domain) {
 
   try {
     // 2 STEP FOR FINAL IMPLEMENTATION:
-    // const response = await retry(() =>
-    //   httpClient.post(PROSPEO_SEARCH_URL, payload, config),
-    // );
+     const response = await retry(() =>
+       httpClient.post(PROSPEO_SEARCH_URL, payload, config),
+     );
 
     // Mock response used during development to validate pipeline
     // behavior without consuming Prospeo credits.
-    const response = {
-      data: {
-        results: [
-          {
-            person: {
-              person_id: "aaaa1",
-              first_name: "Atul",
-              last_name: "Gupta",
-              full_name: "Atul Gupta",
-              linkedin_url: "https://www.linkedin.com/in/guptaatul",
-              current_job_title: "VP of Engineering",
+   // const response = {
+     // data: {
+       // results: [
+         // {
+           // person: {
+             // person_id: "aaaa1",
+  //            first_name: "Atul",
+    //          last_name: "Gupta",
+      //        full_name: "Atul Gupta",
+        //      linkedin_url: "https://www.linkedin.com/in/guptaatul",
+          //    current_job_title: "VP of Engineering",
             },
-            company: {
-              name: "Microsoft",
-              domain: "microsoft.com",
-            },
-          },
-          {
-            person: {
-              person_id: "aaaa5",
-              first_name: "Avi",
-              last_name: "Yoshi",
-              full_name: "Avi Yoshi",
-              linkedin_url: "https://www.linkedin.com/in/avi-yoshi",
-              current_job_title: "CTO & Solution Sales at Microsoft Israel",
-            },
-            company: {
-              name: "Microsoft",
-              domain: "microsoft.com",
-            },
-          },
-        ],
-        pagination: {
-          current_page: 1,
-          per_page: 25,
-          total_page: 1,
-          total_count: 5,
-        },
-        free: true,
-      },
-    };
+//            company: {
+  //            name: "Microsoft",
+    //          domain: "microsoft.com",
+      //      },
+        //  },
+   //       {
+     //       person: {
+       //       person_id: "aaaa5",
+         //     first_name: "Avi",
+           //   last_name: "Yoshi",
+             // full_name: "Avi Yoshi",
+  //            linkedin_url: "https://www.linkedin.com/in/avi-yoshi",
+    //          current_job_title: "CTO & Solution Sales at Microsoft Israel",
+      //      },
+        //    company: {
+          //    name: "Microsoft",
+            //  domain: "microsoft.com",
+ //           },
+   //       },
+     //   ],
+       // pagination: {
+  //        current_page: 1,
+    //      per_page: 25,
+      //    total_page: 1,
+        //  total_count: 5,
+   //     },
+   //   free: true,
+   //   },
+   // };
 
     const results = response.data?.results ?? [];
 
