@@ -28,23 +28,23 @@ export async function getSimilarCompanies(domain) {
   };
 
   // TO REDUCE CREDIT USAGE, WE'LL SKIP THE ACTUAL API CALL AND RETURN AN EMPTY RESULT SET.
-const response = {
-  data: {
-    companies: [
-      {
-        company: {
-          domain: "kriralabs.com",
-          name: "Krira Labs"
-        },
-        relevance: "B"
-      },
-      {
-        company: {
-          domain: "microsoft.com",
-          name: "Microsoft"
-        },
-        relevance: "B"
-      },
+//const response = {
+ // data: {
+   // companies: [
+     // {
+      //  company: {
+         // domain: "kriralabs.com",
+         // name: "Krira Labs"
+       // },
+      //  relevance: "B"
+    //  },
+     // {
+      //  company: {
+       //   domain: "microsoft.com",
+       //   name: "Microsoft"
+      //  },
+      //  relevance: "B"
+     // },
       // {
       //   company: {
       //     domain: "cetaceanlabs.com",
@@ -52,14 +52,14 @@ const response = {
       //   },
       //   relevance: "B"
       // }
-    ]
-  }
-};
+ //   ]
+//  }
+// };
 
   // FINAL IMPLEMENTATION TASK:1
-  // const response = await retry(async () => {
-  //   return await httpClient.post(OCEAN_SEARCH_URL, payload, config);
-  // });
+   const response = await retry(async () => {
+     return await httpClient.post(OCEAN_SEARCH_URL, payload, config);
+   });
 
   // logger.info(JSON.stringify(response.data, null, 2));
 
